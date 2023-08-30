@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
+    <style>
+        /* Additional dashboard styles */
+        .search-box {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .search-input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 300px;
+            margin-right: 10px;
+        }
+
+        .search-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .search-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        /* Movie details styles */
+        .movie-details {
+            margin-top: 20px;
+        }
+
+        .movie-details h2 {
+            margin-bottom: 10px;
+        }
+
+        .movie-details ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .movie-details li {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Dashboard</h1>
+
+    <!-- Movie search form -->
+    <div class="search-box">
+        <form action="/explorecity" method="get">
+            <input type="text" name="cityName" class="search-input" placeholder="Enter a city name" required>
+            <button type="submit" class="search-button">Search</button>
+        </form>
+    </div>
+</body>
+</html>
